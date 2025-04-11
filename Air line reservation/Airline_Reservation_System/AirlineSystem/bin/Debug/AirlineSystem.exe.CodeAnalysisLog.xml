@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem\bin\Debug\AirlineSystem.exe">
+   <Modules>
+    <Module Name="airlinesystem.exe">
+     <Namespaces>
+      <Namespace Name="AirlineSystem">
+       <Types>
+        <Type Name="AddPassenger" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#recordBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="AddPassenger.cs" Line="70">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'AddPassenger.recordBtn_Click(object, EventArgs)' could contain the following variables 'this.idpassenger.Text', 'this.passengerName.Text', 'this.passportNo.Text', 'this.passengerAddress.Text', 'this.nationality.SelectedItem', 'this.gender.SelectedItem', 'this.phone.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CancellationTbl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#cancelBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="CancellationTbl.cs" Line="122">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'CancellationTbl.cancelBtn_Click(object, EventArgs)' could contain the following variables 'this.cancelId.Text', 'this.ticketID.SelectedValue', 'this.flightcode.Text', 'this.date.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#deleteTicket()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="CancellationTbl.cs" Line="89">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'CancellationTbl.deleteTicket()' could contain the following variables 'this.ticketID.SelectedValue'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FlightTbl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#recordBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="FlightTbl.cs" Line="60">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'FlightTbl.recordBtn_Click(object, EventArgs)' could contain the following variables 'this.flightCode.Text', 'this.source.SelectedItem', 'this.destination.SelectedItem', 'this.takeofDate.Text', 'this.noofseats.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Ticket" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#bookBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="Ticket.cs" Line="127">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'Ticket.bookBtn_Click(object, EventArgs)' could contain the following variables 'this.ticketID.Text', 'this.flightCode.SelectedValue', 'this.passengerId.SelectedValue', 'this.name.Text', 'this.nationality.Text', 'this.passport.Text', 'this.amount.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ViewFlights" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#deleteBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="ViewFlights.cs" Line="82">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ViewFlights.deleteBtn_Click(object, EventArgs)' could contain the following variables 'this.flightCode.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#updateBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="ViewFlights.cs" Line="123">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ViewFlights.updateBtn_Click(object, EventArgs)' could contain the following variables 'this.source.SelectedItem', 'this.destination.SelectedItem.ToString()', 'this.takeofDate.Text', 'this.noofseats.Text', 'this.flightCode.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ViewPassenger" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#deleteBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="ViewPassenger.cs" Line="62">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ViewPassenger.deleteBtn_Click(object, EventArgs)' could contain the following variables 'this.passengerId.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#updateBtn_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2023-11-26 08:31:44Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\Visual Studio\Projects\AirlineSystem\AirlineSystem" File="ViewPassenger.cs" Line="141">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'ViewPassenger.updateBtn_Click(object, EventArgs)' could contain the following variables 'this.name.Text', 'this.passportNo.Text', 'this.address.Text', 'this.nationality.SelectedItem', 'this.gender.SelectedItem', 'this.phone.Text', 'this.passengerId.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
